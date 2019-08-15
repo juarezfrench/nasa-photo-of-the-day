@@ -53,22 +53,17 @@ const Title = styled.h2`
   font-size: 3em;
   text-align: center;
   color: MidnightBlue;
+  font-stack: Baskerville;
+
 `;
 
-const Body =styled.body`
-
-display: Flex;
-justify-content: center;
-background: LightGray;
-margin: 2% 0% 0% 12.5%;
-
-`
 
 const Image =styled.img`
-display: flex;
-justify-content: center;
-width: 50%;
+display: flexbox;
+justify-content: flex-end;
+width: 40%;
 height: auto;
+margin: 0 0 0% 26%;
 
 `
 
@@ -89,7 +84,8 @@ const Content=styled.p `
 text-align: center;
 color: MidnightBlue;
 text-align: left;
-margin: 0 10% 0 10%;
+margin: 0 5% 0 5%;
+padding-bottom: 5%;
 `
 
 const Card = styled.div `
@@ -98,6 +94,6 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 background: SlateGray;
-margin: 2% 12.5% 0% 0%;
+margin: 2% 10% 0% 10%;
 
 `

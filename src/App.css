@@ -1,9 +1,5 @@
 body {
   display: Flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: LightGray;
-  margin: 2% 0% 0% 12.5%;
 }
 /*# sourceMappingURL=App.css.map */
