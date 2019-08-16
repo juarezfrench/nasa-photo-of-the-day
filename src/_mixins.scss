@@ -1,0 +1,45 @@
+
+
+
+@mixin borderRadius($value) {
+
+    border-radius: #{$value};
+}
+
+
+@mixin textShadow {
+text-shadow: 1px 1px 2px lightgray;
+}
+
+@mixin boxShadow {
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    
+}
+
+@mixin idiotBox($value){
+
+        border: 1px solid #{$value};
+        };
+    
+
+ @mixin insertMargins($values){
+
+    @each $var in $values {
+        margin: #{$var}
+    };
+}    
+
+@mixin insertPadding($values){
+
+    @each $var in $values {
+        padding: #{$var}
+    };
+}    
+
+@font-face {
+font-family: "League Spartan Bold";
+src: url("./Fonts/");
+url: ("src/Fonts/leaguespartan-bold-webfont.woff")
+}
+

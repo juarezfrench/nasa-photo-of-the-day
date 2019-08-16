@@ -1,5 +1,9 @@
 body {
-  display: Flex;
-  background: LightGray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: DimGray;
+  margin-left: 15%;
+  width: 90%;
 }
 /*# sourceMappingURL=App.css.map */

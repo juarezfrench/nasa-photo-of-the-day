@@ -1,53 +1,35 @@
-// import React, {useState, useEffect} from "react"
+// import React from 'react';
+// import { Carousel } from 'react-responsive-carousel';
+// import "react-responsive-carousel/lib/styles/carousel.css";
 
-// import Moment from 'react-moment';
-// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-// import 'pure-react-carousel/dist/react-carousel.es.css';
-
-
-
-
-// function NasaCarousel(props) {
-
-// let data=props
-//   return (
-//   function makeSlides(data){
-   
-    
-//       <CarouselProvider
-//         naturalSlideWidth={100}
-//         naturalSlideHeight={125}
-//         totalSlides={6}
-//       >
-//           <Slider>
-//           <Slide index={data.index}><h2>{data.title}</h2>
-//           <img src= {data.url} alt = "Space, the Final Frontier"/>
-
-//         <h3> <Moment className = "date" format="LL">{data.date}</Moment> </h3>
-
-//        <p className="intro"> About " {data.title} "</p>
-
-//         <p className="explanation">
-        
-//         {data.explanation}
-        
-//         </p>
-          
-          
-//            </Slide>
-          
-//         </Slider>
-//         <ButtonBack>Back</ButtonBack>
-//         <ButtonNext>Next</ButtonNext>
-
-//       </CarouselProvider>
-//     })}
+// let styles = {
+//     margin: 'auto',
+//     width: '500px'
+//   };
   
+// function App() {
+//   return (
+// 	<div style={styles}>
+// 		<Carousel>
+// 			<div>
+// 				<img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg" alt="Hong Kong" />
+// 				<p className="legend">Hong Kong</p>
+// 			</div>
+// 			<div>
+// 				<img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/c1cklkyp6ms02tougufx.webp" alt="Singapore"/>
+// 				<p className="legend"></p>
+// 			</div>
+// 			<div>
+// 				<img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/e8fnw35p6zgusq218foj.webp" alt="Japan"/>
+// 				<p className="legend">Japan</p>
+// 			</div>
+// 			<div>
+// 				<img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/liw377az16sxmp9a6ylg.webp" alt="Las Vegas"/>
+// 				<p className="legend">Las Vegas</p>
+// 			</div>
+// 		</Carousel>
+// 	</div>
+//   );
+// }
 
-
-// export default NasaCarousel
-
-
-
-
-
+// export default App;

@@ -5,8 +5,8 @@ import "./App.scss";
 // import NasaCarousel from "./Components/NasaCarousel";
 
 
-function App(props) {
-  const [data, setData] =useState({ });
+const App = props => {
+  const [data, setData] =useState([]);
   
 
   console.log('PhotoCard.js -> %cwhere?:', 'color: green', 'Top')
@@ -14,40 +14,41 @@ function App(props) {
   useEffect(() => {
 
   axios
-.get("https://api.nasa.gov/planetary/apod?api_key=1zQ2xsEyCfUJ88Kbjge2fA9L4rvxpJW7eBnKnd1P")
+.get("https://api.nasa.gov/planetary/apod?api_key=1zQ2xsEyCfUJ88Kbjge2fA9L4rvxpJW7eBnKnd1P&count=6")
 
  .then (res => {
- console.log('App.js -> %cres:', 'color: MediumBlue', res)
+console.log('App.js -> %cres:', 'color: MediumBlue', res)
 
  setData(res.data)
-//  console.log('PhotoCard.js -> %cRes Data:', 'color: coral', res.data)
+console.log('App.js -> %csetData:', 'color: navy', setData)
+
  })
-.catch(error => {
-console.error('App.js -> %c Problem getting data - check this: ', 'color: Fuchsia', error)
+.catch(err => {
+console.error('App.js -> %c Problem getting data - check this: ', 'color: Fuchsia', err )
 
   
 })
 
- 
 
- }, [])
- console.log('App.js -> %cdata:', 'color: DarkMagenta', data)
+ }, [data])
+
+
+
+
+//  console.log('App.js -> %cdata:', 'color: DarkMagenta', data)
 
   return (
 
-    <div className="App">
-        {/* <NasaCarousel /> */}
-      
-      <PhotoCard  title={data.title}
-                  date={data.date}
-                  url={data.url}
-                  explanation = {data.explanation}
-                 
-     />
-
-   
+    <div className="App">{
+      data.map(data => 
+        <div>
+          <PhotoCard key={data.index} title={data.title} />
+        </div>
+      )}
+  
     </div>
-  );
-}
+     
+  )}
 
-export default App;
+
+export default App
